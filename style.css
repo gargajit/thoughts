@@ -1,0 +1,30 @@
+a, header {
+    color: brown;
+    font-weight: 600;
+}
+
+.title {
+    font-family: 'Heebo', sans-serif;
+    font-size:xx-large;
+    display: inline-block;
+}
+
+.section {
+    font-size: large;
+    font-family: 'Heebo', sans-serif;
+    display: flex;
+    gap: 20px;  
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-left: 10px;
+    margin-right: 10px;
+    
+}
+
+.no-underline {
+    text-decoration: none;
+}
