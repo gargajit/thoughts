@@ -11,6 +11,40 @@
     <style>
         .profile-pic {
             border-radius: 50%;
+            order: 2;
+            margin-right: 10%;
+        }
+
+        .resume-intro {
+            margin-left: 15px;
+            margin-right: 15px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .content {
+            margin-left: 15px;
+            margin-right: 15px;
+        }
+
+        .content h1 {
+            font-size: x-large;
+        }
+
+        .content h2 {
+            font-size: large;
+        }
+
+        @media (max-width: 768px) {
+            .resume-intro {
+                display: block;
+            }
+        }
+
+        @media (max-width: 560px) {
+            .section {
+                display: none;
+            }
         }
     </style>
 </head>
@@ -27,76 +61,82 @@
         </div>
     </header>
     <main>
-    <img src="./assets/ajit.jpg" height="200" alt="Ajit Garg's profile image" class="profile-pic" />
-    <h1>Ajit Garg</h1>
-    <h2>Web Developer</h2>
-    <hr />
-    <h1>Ojective Statement</h1>
-    <p>A developer that also does <u>advocacy.</u></p>
-    <p>    
-        An aspiring web developer in <b>MERN</b> stack. Also, a Champion and Ambassador in <b>fastn</b> framework.
-    </p>
-    <hr />
-    <h1>Education</h1>
-    <ul>
-        <li>B.Tech in Computer Science - NMIMS (2011-2015)</li>
-        <li>ISC - Modern Academy (2010)</li>
-        <li>ICSE - St. Francis' College (2008)</li>
-    </ul>
-    <hr />
-    <h1>Work Experience</h1>
-    <h3>Developer Relations @ FifthTry Pvt. Ltd.</h3>
-    <ul>
-        <li>15 Dec 2022 - ongoing</li>
-        <li>Bengaluru, Karnataka, India</li>
-        <li><b>Skills:</b>
+        <div class="resume-intro">
+            <img src="./assets/ajit.jpg" height="200" alt="Ajit Garg's profile image" class="profile-pic" />
+            <div class="name-profession">
+                <h1>Ajit Garg</h1>
+                <h2>Full Stack Developer</h2>
+                <p>A developer that also does <u>advocacy.</u></p>
+                <p>    
+                    An aspiring web developer in <b>MERN</b> stack. Also, a Champion and Ambassador in <b>fastn</b> framework.
+                </p>
+            </div>
+        </div>
+        <div class="content">
+            <hr />
+            <h1>Education</h1>
             <ul>
-                <li>Web Applications</li>
-                <li>Video-based Content Creator</li> 
-                <li>Zoho CRM</li> 
-                <li>Marketing</li>
-                <li>Software Defined Networking</li>
+                <li>B.Tech in Computer Science - NMIMS (2011-2015)</li>
+                <li>ISC - Modern Academy (2010)</li>
+                <li>ICSE - St. Francis' College (2008)</li>
             </ul>
-        </li>
-    </ul>
-    <h3>Software Test Engineer @ Accenture Pvt. Ltd.</h3>
-    <ul>
-        <li>7 Nov 2015 - 30 July 2017</li>
-        <li>Mumbai, Maharashtra, India</li>
-        <li><b>Skills:</b></li>
-        <ul>
-            <li>Manual Testing</li>
-            <li>Defect Logging</li>
-            <li>Microsoft Dynamics CRM</li>
-        </ul>
-    </ul>
-    <hr />
-    <h1>Skills</h1>
-    <ul>
-        <li>HTML, CSS, JS</li>
-        <li>MongoDB</li>
-        <li>ExpressJS</li>
-        <li>React JS</li>
-        <li>NodeJS</li>
-        <li>fastn full stack Champion</li>
-        <li>Technical video course creator</li>
-        <li>Event Management</li>
-    </ul>
-    <hr />
-    <h1>Certifications</h1>
-    <ul>
-        <li>
-            <a href="https://fastn.com/champions/ajit-garg/">fastn Champion</a> <br />
-            <img src="./assets/certificate.jpg" height="300" alt="fastn Champion Certificate" />
-        </li>
-    </ul>   
-    <hr />
-    <h1>Know more</h1>
-    <ul>
-        <li><a href="./public/hobby.html">My Hobbies</a></li>
-        <li><a href="./public/contact.html">Contact Me</a></li>
-        <li><a href="https://github.com/gargajit">Work on GitHub</li>
-    </ul>
+            <hr />
+            <h1>Work Experience</h1>
+            <h2>Developer Relations @ FifthTry Pvt. Ltd.</h2>
+            <ul>
+                <li>15th Dec 2022 - 31st Oct 2023</li>
+                <li>Bengaluru, Karnataka, India</li>
+                <li><b>Skills:</b>
+                    <ul>
+                        <li>fastn stack</li>
+                        <li>Web Applications</li>
+                        <li>Video-based Content Creator</li> 
+                        <li>Zoho CRM</li> 
+                        <li>Marketing</li>
+                        <li>Software Defined Networking</li>
+                    </ul>
+                </li>
+            </ul>
+            <h2>Software Test Engineer @ Accenture Pvt. Ltd.</h2>
+            <ul>
+                <li>7 Nov 2015 - 30 July 2017</li>
+                <li>Mumbai, Maharashtra, India</li>
+                <li><b>Skills:</b></li>
+                <ul>
+                    <li>Manual Testing</li>
+                    <li>Defect Logging</li>
+                    <li>Microsoft Dynamics CRM</li>
+                </ul>
+            </ul>
+            <hr />
+            <h1>Skills</h1>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>MongoDB</li>
+                <li>ExpressJS</li>
+                <li>React JS</li>
+                <li>NodeJS</li>
+                <li>fastn full stack</li>
+                <li>Technical video course creator</li>
+                <li>Event Management</li>
+            </ul>
+            <hr />
+            <h1>Certifications</h1>
+            <ul>
+                <li>
+                    <a href="https://fastn.com/champions/ajit-garg/">fastn Champion</a> <br />
+                    <img src="./assets/certificate.jpg" height="300" alt="fastn Champion Certificate" />
+                </li>
+            </ul>   
+            <hr />
+            <h1>Know more</h1>
+            <ul>
+                <li><a href="./contact.html">Contact Me</a></li>
+                <li><a href="https://github.com/gargajit">Work on GitHub</li>
+            </ul>
+        </div>
     </main>
 </body>
 <footer>
